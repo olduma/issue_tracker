@@ -1,0 +1,118 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, form, input, textarea, button, pre, code {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000; /* Change background color to black */
+  color: #fff; /* Change text color to white */
+  text-align: center; /* Center all text content */
+  min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
+}
+
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto; /* Center the header horizontally */
+}
+
+section {
+  background-color: #111; /* Change background color to a darker black */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  /*margin: 20px auto; !* Center the sections horizontally with some top margin *!*/
+  max-width: 800px; /* Limit section width for better readability */
+  text-align: center; /* Center all content inside sections */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+h3 {
+  font-size: 18px;
+  padding: 20px;
+}
+
+h2 {
+  padding: 20px;
+  margin: 0 auto;
+}
+
+code {
+  font-family: Consolas, monospace;
+  background-color: #333; /* Change code background color */
+  padding: 2px 4px;
+  border: 1px solid #555; /* Change code border color */
+  border-radius: 4px;
+}
+
+pre {
+  background-color: #333; /* Change pre background color */
+  color: #fff; /* Change pre text color to white */
+  padding: 10px;
+  border: 1px solid #555; /* Change pre border color */
+  border-radius: 4px;
+  overflow-x: auto;
+  text-align: left;
+}
+
+form.border {
+  border: 1px solid #555; /* Change form border color */
+  padding: 30px;
+  border-radius: 4px;
+  text-align: center; /* Center form content */
+}
+
+/* Style input elements */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #555;
+  border-radius: 4px;
+  background-color: #333;
+  color: white;
+}
+
+button[type="submit"] {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #555;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+section{
+  margin: 0 auto;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  section {
+    margin: 20px auto; /* Center sections with some top margin on smaller screens */
+    padding: 0 10px; /* Add some padding for better mobile readability */
+  }
+}
